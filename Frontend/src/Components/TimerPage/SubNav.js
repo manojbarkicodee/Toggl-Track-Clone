@@ -31,7 +31,7 @@ const SubNav = ({count}) => {
 
     let getdata = () => {
       let token=localStorage.getItem("userToken")
-       axios.get(`https://lit-woodland-02359.herokuapp.com/timer`,{
+       axios.get(`https://toggoletrackbackend.onrender.com/timer`,{
         headers:{
           "authorization":`Bearer ${token}`
         }

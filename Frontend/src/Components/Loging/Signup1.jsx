@@ -49,7 +49,7 @@ export default function Signup1() {
           email,
           password
       }
-       await fetch("https://lit-woodland-02359.herokuapp.com/user/signup"
+       await fetch("https://toggoletrackbackend.onrender.com/user/signup"
        , {
           method : "POST",
           body : JSON.stringify(payload),
@@ -59,7 +59,7 @@ export default function Signup1() {
       })
       .then((res) => res.json())
       .then((res) => {
-        // console.log(res)
+        console.log(res)
          if(res.message === "Something went wrong! Please try again")
          {
           toast({

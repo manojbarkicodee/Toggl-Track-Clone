@@ -50,7 +50,7 @@ export const Timerd = () => {
     };
 
      let getdata = () => {
-       axios.get(`https://lit-woodland-02359.herokuapp.com/timer`,{
+       axios.get(`https://toggoletrackbackend.onrender.com/timer`,{
         headers:{
           "authorization":`Bearer ${token}`
         }
@@ -59,7 +59,7 @@ export const Timerd = () => {
      };
 
      const getClientdata = () => {
-      axios.get("https://lit-woodland-02359.herokuapp.com/client",{
+      axios.get("https://toggoletrackbackend.onrender.com/client",{
        headers:{
          "authorization":`Bearer ${token}`
        }

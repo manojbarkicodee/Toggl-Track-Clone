@@ -34,7 +34,7 @@ const TopNav = () => {
     };
 
      let getdata = () => {
-       axios.get("https://limitless-peak-78690.herokuapp.com/timer",{
+       axios.get("https://toggoletrackbackend.onrender.com/timer",{
         headers:{
           "authorization":token
         }
